@@ -1,0 +1,33 @@
+/* app.component.css */
+.container {
+  height: calc(100vh - 64px);
+}
+
+.page {
+  padding: 16px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* deixa o sidenav azul claro */
+mat-sidenav {
+  background-color: #bbdefb; /* azul claro */
+  color: #0d47a1;            /* texto azul escuro para contraste */
+}
+
+/* estiliza os links dentro do sidenav */
+mat-nav-list a {
+  color: #0d47a1;            /* azul escuro */
+  font-weight: 500;
+}
+
+mat-nav-list a:hover {
+  background-color: #e3f2fd; /* azul bem clarinho no hover */
+}
+
+.top-links a {
+  color: #fff;
+  text-decoration: none;
+}
