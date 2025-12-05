@@ -1,6 +1,6 @@
-/* app.component.css */
 .container {
-  height: calc(100vh - 64px);
+  height: 100vh; /* ocupa toda a tela */
+  display: flex;
 }
 
 .page {
@@ -11,24 +11,45 @@
   flex: 1 1 auto;
 }
 
-/* deixa o sidenav azul claro */
+/* Menu lateral azul claro */
 mat-sidenav {
   background-color: #bbdefb; /* azul claro */
-  color: #0d47a1;            /* texto azul escuro para contraste */
-  width: 200px; /* ajuste aqui o valor desejado */
+  color: #0d47a1;            /* texto azul escuro */
+  width: 200px;
+  box-shadow: 2px 0 6px rgba(0,0,0,0.2);
 }
 
-/* estiliza os links dentro do sidenav */
+/* Links do menu */
 mat-nav-list a {
-  color: #0d47a1;            /* azul escuro */
+  color: #0d47a1;
   font-weight: 500;
 }
 
+mat-nav-list a.active {
+  background-color: #90caf9; /* destaque para rota ativa */
+  font-weight: 600;
+}
+
 mat-nav-list a:hover {
-  background-color: #e3f2fd; /* azul bem clarinho no hover */
+  background-color: #e3f2fd;
+}
+
+/* Toolbar superior */
+mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .top-links a {
   color: #fff;
   text-decoration: none;
+  margin-left: 16px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  mat-sidenav {
+    width: 160px;
+  }
 }
