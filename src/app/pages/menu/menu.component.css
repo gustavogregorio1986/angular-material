@@ -15,6 +15,7 @@
 mat-sidenav {
   background-color: #bbdefb; /* azul claro */
   color: #0d47a1;            /* texto azul escuro para contraste */
+  width: 200px; /* ajuste aqui o valor desejado */
 }
 
 /* estiliza os links dentro do sidenav */
