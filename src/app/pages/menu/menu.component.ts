@@ -5,7 +5,7 @@ import { MatSidenav, MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { map, shareReplay } from 'rxjs/operators';
 import { CommonModule } from '@angular/common';
@@ -19,7 +19,8 @@ import { CommonModule } from '@angular/common';
     MatIconModule,
     MatListModule,
     MatButtonModule,
-    RouterOutlet],
+    RouterOutlet,
+    RouterLink],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css'
 })
